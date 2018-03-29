@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MenuButton : MonoBehaviour {
+    bool moved = false;
+
     void OnMouseOver() {
-        Debug.Log(".o.");
-        transform.Translate(
-            1,
-            0,
-            0
-        );
+        if (!moved) {
+            transform.Translate(1, 0, 0);
+            moved = true;
+        }
     }
     void OnMouseExit() {
-        Debug.Log(";-;");
-        transform.Translate(
-            -1,
-            0,
-            0
-        );
+        if (moved) {
+            transform.Translate(-1, 0, 0);
+            moved = false;
+        }
     }
 }

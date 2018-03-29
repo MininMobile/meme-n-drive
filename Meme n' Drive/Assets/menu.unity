@@ -640,6 +640,7 @@ GameObject:
   - component: {fileID: 1975515159}
   - component: {fileID: 1975515158}
   - component: {fileID: 1975515157}
+  - component: {fileID: 1975515161}
   - component: {fileID: 1975515160}
   m_Layer: 0
   m_Name: Play
@@ -729,3 +730,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d286cc962e3f9b4889767a9f226ebac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1975515161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975515156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 3, z: 0}
+  m_Center: {x: 3, y: -2, z: 0}

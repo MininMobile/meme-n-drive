@@ -18,7 +18,6 @@ public class MenuButtonExit : MonoBehaviour {
         }
     }
     void OnMouseUp() {
-        Debug.Log("a");
         Application.Quit();
     }
 }

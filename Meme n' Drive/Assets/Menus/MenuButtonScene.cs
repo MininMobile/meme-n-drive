@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtonScene : MonoBehaviour {
     public string scene;
+    public bool enabled = true;
 
     bool moved = false;
 
@@ -21,6 +22,6 @@ public class MenuButtonScene : MonoBehaviour {
         }
     }
     void OnMouseUp() {
-        SceneManager.LoadScene(scene);
+        if (enabled) SceneManager.LoadScene(scene);
     }
 }

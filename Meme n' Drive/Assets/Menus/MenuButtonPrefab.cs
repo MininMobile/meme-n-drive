@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MenuButtonPrefab : MonoBehaviour {
     public GameObject prefab;
+    public bool enabled = true;
 
     bool moved = false;
 
@@ -20,6 +21,6 @@ public class MenuButtonPrefab : MonoBehaviour {
         }
     }
     void OnMouseUp() {
-        var p = Instantiate(prefab);
+        if (enabled) Instantiate(prefab);
     }
 }

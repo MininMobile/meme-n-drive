@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuButtonScene : MonoBehaviour {
+    public string scene;
+
     bool moved = false;
-    string scene;
 
     void OnMouseOver() {
         if (!moved) {

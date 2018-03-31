@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MenuButtonPrefab : MonoBehaviour {
+    public GameObject prefab;
+
     bool moved = false;
-    GameObject prefab;
 
     void OnMouseOver() {
         if (!moved) {

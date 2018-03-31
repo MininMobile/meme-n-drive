@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuButtonScene : MonoBehaviour {
     bool moved = false;
+    string scene;
 
     void OnMouseOver() {
         if (!moved) {
@@ -16,5 +18,8 @@ public class MenuButtonScene : MonoBehaviour {
             transform.Translate(-1, 0, 0);
             moved = false;
         }
+    }
+    void OnMouseUp() {
+        SceneManager.LoadScene(scene);
     }
 }

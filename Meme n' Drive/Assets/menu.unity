@@ -250,6 +250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8736229df17e74a4fa087d445d0429c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  enabled: 0
 --- !u!65 &591525893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -723,6 +725,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487eeeb86a2b5f4409c80e458de1a8c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: menu
+  enabled: 1
 --- !u!65 &1506412462
 BoxCollider:
   m_ObjectHideFlags: 0
